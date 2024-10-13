@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LoveMusic</string>
+    <string name="api_error">Ha ocurrido un error. Inténtalo de nuevo.</string>
+    <string name="empty_response">No results found</string>
+    <string name="top_albums_screen_top_bar">Top Albums</string>
+    <string name="top_albums_screen_image_item">Album</string>
+    <string name="default_top_albums_artist">Andres+Calamaro</string>
+</resources>

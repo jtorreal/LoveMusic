@@ -15,4 +15,4 @@ Design Pattern: MVVM
 Clean Arquitecture
 Database Library: ROOM
 Navigation Component
-Unit Test with LiveData
+Unit Test with Flows and stateFlows

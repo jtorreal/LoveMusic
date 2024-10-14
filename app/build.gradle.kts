@@ -61,6 +61,8 @@ android {
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
+            merges += "META-INF/LICENSE.md"
+            merges += "META-INF/LICENSE-notice.md"
         }
     }
 }
@@ -75,6 +77,12 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    //Mockito
+    implementation(libs.mockk)
+    implementation(libs.kotlinx.coroutines.test)
+
+    //Turbine
+    implementation(libs.turbine)
     
     //Coil
     implementation(libs.coil)

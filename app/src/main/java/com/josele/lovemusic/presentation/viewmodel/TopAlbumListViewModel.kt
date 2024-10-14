@@ -17,8 +17,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class TopAlbumListViewModel @Inject constructor(
-    private val getTopAlbumsUseCase: GetTopAlbumsUseCase,
-    private val savedStateHandle: SavedStateHandle,
+    private val getTopAlbumsUseCase: GetTopAlbumsUseCase
 ) : ViewModel() {
 
     private val defaultArtist = "AlejandroSanz"

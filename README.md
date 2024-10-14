@@ -10,9 +10,9 @@ In development.
 # Framework/Tools
 - JetPack Compose
 - DI: HILT
-Reactive Programming: Flows
-Design Pattern: MVVM
-Clean Arquitecture
-Database Library: ROOM
-Navigation Component
-Unit Test with LiveData
+- Reactive Programming: Flows
+- Design Pattern: MVVM
+- Clean Arquitecture
+- Database Library: ROOM
+- Navigation Component
+

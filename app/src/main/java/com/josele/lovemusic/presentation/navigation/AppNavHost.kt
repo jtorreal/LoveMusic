@@ -23,9 +23,7 @@ fun MyApp() {
                 })
         }
 
-        /**NUEVA IMPLEMENTACIÓN DE TIPOS SEGUROS**/
         composable<TopAlbumInfo> { backStackEntry ->
-            //CON PASARLE EL ID es suficiente, no hace falta pasarle el data class entero
             val albumInfoDetail = backStackEntry.toRoute<TopAlbumInfo>()
             val topAlbumInfoViewModel = hiltViewModel<TopAlbumInfoViewModel>()
             TopAlbumInfoScreen(topAlbumInfoViewModel)

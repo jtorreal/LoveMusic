@@ -8,7 +8,7 @@ import javax.inject.Inject
 
 class GetTopAlbumsUseCase @Inject constructor(private val iLoveMusic: ILoveMusicRepository) {
 
-     fun invoke(artistName: String): Flow<Result<List<TopAlbumDomain>>> {
+    operator fun invoke(artistName: String): Flow<Result<List<TopAlbumDomain>>> {
         return iLoveMusic.getTopAlbumList(artistName)
     }
 }

@@ -19,7 +19,6 @@ import javax.inject.Inject
 @HiltViewModel
 class TopAlbumInfoViewModel @Inject constructor(
     private val getTopAlbumInfoUseCase: GetTopAlbumInfoUseCase,
-    private val savedStateHandle: SavedStateHandle,
 ) : ViewModel() {
 
     private val _topAlbumInfoUiState = MutableStateFlow(TopAlbumInfoUiState(isLoading = true))
@@ -29,7 +28,7 @@ class TopAlbumInfoViewModel @Inject constructor(
         loadTopAlbumInfo()
     }
 
-    private fun loadTopAlbumInfo() {
+    fun loadTopAlbumInfo() {
 
         viewModelScope.launch(Dispatchers.IO) {
             _topAlbumInfoUiState.value = TopAlbumInfoUiState(isLoading = true)

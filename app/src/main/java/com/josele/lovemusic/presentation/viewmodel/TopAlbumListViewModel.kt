@@ -28,7 +28,7 @@ class TopAlbumListViewModel @Inject constructor(
         loadTopAlbums()
     }
 
-    private fun loadTopAlbums() {
+    fun loadTopAlbums() {
 
         viewModelScope.launch(Dispatchers.IO) {
             _stateAlbumList.value = TopAlbumListUiState(isLoading = true)
